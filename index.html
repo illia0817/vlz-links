@@ -113,6 +113,19 @@
     font-size: 12px; font-weight: 400; letter-spacing: 2px; line-height: 1.7;
     color: rgba(255,255,255,.5);
   }
+  /* подпись автора: тихая, не перетягивает внимание со ссылок */
+  .author {
+    margin-top: 18px; text-align: center;
+    font-size: 10px; font-weight: 400; letter-spacing: 1.5px;
+    color: rgba(255,255,255,.28);
+  }
+  .author a {
+    color: rgba(255,255,255,.42);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,.18);
+    transition: color .15s ease, border-color .15s ease;
+  }
+  .author a:hover { color: rgba(255,255,255,.75); border-color: rgba(255,255,255,.5); }
 </style>
 </head>
 <body>
@@ -164,6 +177,10 @@
       ВІДКРИТИЙ ЧЕМПІОНАТ МІСТА ЖИТОМИРА<br>
       Офіційні сторінки ліги 🏐
     </footer>
+
+    <div class="author">
+      created by <a href="https://inmf.studio" target="_blank" rel="noopener">inmf.studio</a>
+    </div>
   </div>
 </body>
 </html>
